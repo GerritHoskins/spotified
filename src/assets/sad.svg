@@ -1,0 +1,10 @@
+<svg class="svg-sad" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+  <g>
+    <circle class="contour" fill="none" cx="12" cy="12" r="11.25" stroke-width="1.5"/>
+    <g class="eyes">
+      <circle cx="15.5" cy="8.5" r="1.5" stroke-width="0"/>
+      <circle cx="8.5" cy="8.5" r="1.5" stroke-width="0"/>
+    </g>
+    <path class="mouth" fill="none" stroke-linecap="round" stroke-width="1.5" d="M7,16.75 C8.66666667,15.5833333 10.3333333,15 12,15 C13.6666667,15 15.3333333,15.5833333 17,16.75"/>
+  </g>
+</svg>
