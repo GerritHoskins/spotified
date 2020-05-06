@@ -31,7 +31,7 @@ export default new Vuex.Store({
   },
   plugins: [
     createPersistedState({
-      key: 'singlyricly',
+      key: 'devstation',
       paths: ['auth', 'user', 'settings'],
     }),
   ],
