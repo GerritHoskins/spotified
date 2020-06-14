@@ -25,9 +25,9 @@ const numCPUs = require('os').cpus().length;
 const http2 = require('http2-wrapper');
 const history = require('connect-history-api-fallback');
 
-const fb = require('firebase');
+/* const fb = require('firebase');
 const db = require('firebase/firestore');
-const fbadmin = require('firebase-admin');
+const fbadmin = require('firebase-admin'); */
 const fetch = require('node-fetch');
 const jsdom = require('jsdom');
 
@@ -35,7 +35,7 @@ const _ = require('lodash');
 const { JSDOM } = jsdom;
 
 // Initialize Firestore
-const serviceAccount = require('./../../auth.json');
+/* const serviceAccount = require('./../../auth.json'); */
 
 /**
  * Generates a random string containing numbers and letters
@@ -70,11 +70,6 @@ if (cluster.isMaster) {
   });
 } else {
   const app = express();
-
-  fbadmin.initializeApp({
-    credential: fbadmin.credential.cert(serviceAccount),
-    databaseURL: 'https://dbtronics-79c66.firebaseio.com',
-  });
 
   // Priority serve any static files.
   app.use(express.static(path.resolve(__dirname, '../client/build')));
