@@ -100,8 +100,8 @@ const GlobalStyle = createGlobalStyle`
     -webkit-font-smoothing: antialiased;
     font-family: ${fonts.primary};
     font-size: ${fontSizes.base};
-    background-color: ${colors.black};
-    color: ${colors.white};
+    background-color: #02303d;
+    color: ${colors.offWhite};
   }
 
   #root {

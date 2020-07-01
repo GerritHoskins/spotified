@@ -134,11 +134,11 @@ const NavLink = props => <Link getProps={isActive} {...props} />;
 
 const Nav = () => (
   <Container>
-    <Logo>
+     <Logo>
       <Link to="/">
-        <IconSpotify />
+        {/* <IconSpotify />  */}
       </Link>
-    </Logo>
+    </Logo> 
     <Menu>
       <MenuItem>
         <NavLink to="/">
@@ -173,7 +173,7 @@ const Nav = () => (
       <MenuItem>
         <NavLink to="tabs">
           <IconMusic />
-          <div>Taps</div>
+          <div>Tabs</div>
         </NavLink>
       </MenuItem>
     </Menu>

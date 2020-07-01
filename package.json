@@ -19,21 +19,7 @@
     "client": "cd client && yarn start",
     "server": "node server",
     "dev": "concurrently --kill-others-on-fail \"yarn server\" \"yarn client\"",
-    "start": "node server",
-    "heroku-postbuild": "cd client/ && yarn && yarn install --production && yarn build"
-  },
-  "lint-staged": {
-    "*.{js,css,json,md}": [
-      "prettier --write"
-    ],
-    "*.{js}": [
-      "eslint --fix"
-    ]
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
+    "start": "node server"
   },
   "dependencies": {
     "cheerio": "^1.0.0-rc.3",
@@ -42,8 +28,8 @@
     "cors": "^2.8.5",
     "dotenv": "^8.2.0",
     "express": "~4.17.1",
-    "firebase": "^7.15.1",
-    "firebase-admin": "^8.12.1",
+    "firebase": "^7.15.5",
+    "firebase-admin": "^8.13.0",
     "got": "^11.3.0",
     "jsdom": "^16.2.2",
     "node-fetch": "^2.6.0",
@@ -55,11 +41,10 @@
     "@upstatement/prettier-config": "^0.3.0",
     "concurrently": "^5.2.0",
     "eslint-config-prettier": "^6.11.0",
-    "eslint-plugin-jsx-a11y": "^6.2.3",
-    "eslint-plugin-react": "^7.20.0",
+    "eslint-plugin-jsx-a11y": "^6.3.1",
+    "eslint-plugin-react": "^7.20.3",
     "http2-wrapper": "^1.0.0-beta.4.6",
-    "husky": "^4.2.5",
-    "lint-staged": "^10.2.9",
+    "lint-staged": "^10.2.11",
     "prettier": "^2.0.5"
   }
 }

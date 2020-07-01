@@ -2,8 +2,18 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { catchErrors } from '../utils';
 import { getTabs } from '../spotify';
-
 import Loader from './Loader';
+
+import styled from 'styled-components/macro';
+import { theme, mixins, media, Main } from '../styles';
+const { colors, fontSizes, spacing } = theme;
+
+const TabsCpntainer = styled(Main)`
+  ${mixins.flexCenter};
+  flex-direction: column;
+  height: 100%;
+  text-align: center;
+`;
 
 class Tab extends Component {
   state = {
@@ -28,7 +38,7 @@ class Tab extends Component {
     const { artists } = this.state;
 
     return (
-      <React.Fragment>
+      <TabsCpntainer>
         {artists ? (
           <>
             <div>{artists[0].songName}</div>
@@ -44,7 +54,7 @@ class Tab extends Component {
         ) : (
           <Loader />
         )}
-      </React.Fragment>
+      </TabsCpntainer>
     );
   }
 }

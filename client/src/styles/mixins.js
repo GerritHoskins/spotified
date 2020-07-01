@@ -42,7 +42,7 @@ const mixins = {
 
   button: css`
     display: inline-block;
-    color: ${colors.white};
+    color: ${colors.blue};
     font-weight: 700;
     font-size: ${fontSizes.xs};
     letter-spacing: 1px;
@@ -64,7 +64,7 @@ const mixins = {
   greenButton: css`
     display: inline-block;
     background-color: ${colors.green};
-    color: ${colors.white};
+    color: ${colors.offWhite};
     font-weight: 700;
     font-size: ${fontSizes.xs};
     letter-spacing: 1px;
